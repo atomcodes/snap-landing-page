@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  padding: 0 5px 0 5px;
+  margin-bottom: 80px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+nav a,
+nav button {
+  font-size: 14px !important;
+  text-decoration: none;
+  color: black;
+}
+.logo-container {
+  display: flex;
+}
+.logo-container li {
+  padding-top: 30px;
+  margin: 0 16px;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  margin-left: 2rem;
+}
+button {
+  background-color: white;
+  outline: none;
+  padding: 7px 14px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  border: 1px solid #3b3a3a;
+  border-radius: 7px;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px auto 0;
+  width: 990px;
+}
+.remote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 40px;
+}
+.code {
+  width: 35%;
+  height: 450px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 3rem;
+  padding-top: 40px;
+}
+.remote p {
+  color: gray;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 14px;
+}
+.remote button {
+  display: inline-block;
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+  outline: none;
+  width: 130px;
+  margin-bottom: 60px;
+  padding: 13px 0;
+}
+figure {
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-evenly;
+}
+figure img {
+  width: 50px;
+  height: auto;
+}
+/* media all and (max-width: 600px) {
+  body {
+    color: blue;
+    background-color: darkblue;
+  }
+  body {
+    color: red;
+    background-color: yellow;
+  }
+} */
