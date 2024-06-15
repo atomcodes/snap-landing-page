@@ -13,10 +13,11 @@ nav ul {
   justify-content: space-between;
   list-style: none;
   align-items: center;
+  height: 80px;
 }
 nav a,
 nav button {
-  font-size: 14px !important;
+  font-size: 1.2rem !important;
   text-decoration: none;
   color: black;
 }
@@ -24,7 +25,6 @@ nav button {
   display: flex;
 }
 .logo-container li {
-  padding-top: 30px;
   margin: 0 16px;
 }
 .btns {
@@ -47,32 +47,33 @@ button:hover {
 }
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 32px auto 0;
-  width: 990px;
 }
 .remote {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  padding-left: 40px;
+  /* padding-left: 40px; */
+  /* border: 2px solid red; */
 }
 .code {
-  width: 35%;
+  width: 30%;
   height: 450px;
 }
 h1 {
   font-weight: 700;
   font-size: 3.5rem;
   letter-spacing: 1px;
-  color: black;
-  margin-bottom: 3rem;
-  padding-top: 40px;
+  color: #000000;
+  margin-bottom: 2rem;
+  padding-top: 20px;
+  padding-right: 30px;
 }
 .remote p {
   color: gray;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   line-height: 1.5;
   font-weight: 500;
   font-size: 14px;
@@ -84,25 +85,67 @@ h1 {
   color: white;
   outline: none;
   width: 130px;
-  margin-bottom: 60px;
-  padding: 13px 0;
+  margin-bottom: 50px;
+  padding: 13px 20px;
+  text-align: center;
 }
 figure {
-  /* width: 50%; */
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 figure img {
   width: 50px;
   height: auto;
 }
-/* media all and (max-width: 600px) {
-  body {
-    color: blue;
+.grouped-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.mobile-image {
+  display: none;
+}
+.icon {
+  display: none;
+}
+@media all and (max-width: 760px) {
+  /* body {
+    color: white;
     background-color: darkblue;
+  } */
+  .hero-section {
+    flex-direction: column-reverse;
   }
-  body {
-    color: red;
-    background-color: yellow;
+  .grouped-links {
+    display: none;
   }
-} */
+  .mobile-image {
+    display: block;
+  }
+  .code {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .remote {
+    text-align: center;
+    width: 100%;
+  }
+  .remote button,
+  figure {
+    margin: 10px auto;
+  }
+  .remote p {
+    margin: 0 auto;
+  }
+  figure img {
+    margin: 0 5px;
+  }
+  .icon {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
